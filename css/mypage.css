@@ -1,0 +1,271 @@
+.My-title {
+	padding: 95px 0 57px;
+	display: flex;
+	justify-content: space-between;
+}
+.My-title h2 {
+	font-size: 50px;
+	font-weight: 600;
+	line-height: 60px;
+}
+.My-title .kakaoPay {
+	display: flex
+}
+.My-title .kakaoPay p {
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 22px;
+	text-align: right;
+	margin: 4px 23px 0 0;
+}
+.My-title .kakaoPay p strong {
+	display: block;
+	font-size: 20px;
+	line-height: 24px;
+}
+.My-title .kakaoPay button {
+	position: relative;
+	display: inline-block;
+	width: 200px;
+	height: 48px;
+	border: none;
+	background: #222222;
+	border-radius: 25px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.My-title .kakaoPay button span {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 900;
+	line-height: 20px;
+	color: #F5BF00;
+	width: 100%;
+	transition: 0.3s;
+}
+.My-title .kakaoPay button::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	content: "";
+	color: #222222;
+	width: 0;
+	height: 100%;
+	visibility: hidden;
+	background: #FFD028;
+	transition: 0.3s;
+}
+.My-title .kakaoPay button:hover::before {
+	width: 100%;
+	visibility: visible;
+}
+.My-title .kakaoPay button:hover span {
+	color: #222222;
+}
+.contents {
+	display: flex;
+	justify-content: space-between;
+	padding-bottom: 150px;
+}
+.menu {
+	width: 320px;
+	border: 2px solid #EEEEEE;
+	border-radius: 25px;
+	padding: 50px 0 30px 80px;
+	box-sizing: border-box;
+
+	font-weight: 500;
+	line-height: 35px;
+	color: rgba(34, 34, 34, 0.8);
+}
+.menu > ul > li > ul > li:nth-child(1),
+.menu > ul > li > ul.bold li:not(:nth-child(1)) {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 24px;
+	color: #222222;
+	margin: 0 0 10px -22px;
+}
+.menu > ul > li > ul:not(ul.first) {
+	margin-top: 30px;
+}
+.menu > ul > li > ul.bold li:not(:nth-child(1)) {
+	margin-top: 25px;
+}
+.right-area {}
+.right-area > div:not(.banner) {
+	display: inline-block;
+	width: 320px;
+	height: 250px;
+	background: white;
+	border: 2px solid #EEEEEE;
+	padding: 43px 43px 0 45px;
+	box-sizing: border-box;
+	border-radius: 25px;
+}
+.right-area > div:nth-child(2) {
+	margin: 0 40px;
+}
+.right-area > div h3 {
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 36px;
+	margin-left: -8px;
+}
+.right-area > div > span {
+	display: inline-block;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 30px;
+	margin: 17px 0 30px;
+}
+.right-area > div p,
+.right-area > div ul {
+	font-weight: 500;
+	line-height: 28px;
+	color: rgba(34, 34, 34, 0.8);
+}
+.right-area div.account button {
+	background: white;
+	color: #222222;
+	display: flex;
+	align-items: center;
+}
+.right-area div.account button i {
+	font-size: 10px;
+	font-weight: bold;
+	margin-left: 7px;
+}
+.right-area div.coupon ul li {
+	display: flex;
+	justify-content: space-between;
+}
+.right-area div.point i {
+	display: inline-block;
+	width: 38px;
+	height: 38px;
+	background: #FFD028;
+	border-radius: 50%;
+	font-size: 25px;
+	font-weight: 600;
+	line-height: 42px;
+	text-align: center;
+	margin-right: 10px;
+}
+.right-area > article {
+	width: 100%;
+}
+.right-area article h3 {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 30px;
+}
+.right-area article.delivery {
+	margin-top: 27px;
+}
+.right-area article.delivery .process {
+	width: 910px;
+	margin: 0 auto;
+}
+.right-area article.delivery h3 {
+	margin: 20px 0;
+}
+.right-area article.delivery .process ul {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.right-area article.delivery .process li {
+	display: block;
+}
+.right-area article.delivery .process li:nth-child(even) {
+	width: 7px;
+	height: 15px;
+	background: url("../customer service/my_arrow.png") no-repeat center;
+}
+.right-area article.delivery .process li:nth-child(odd) {
+	width: 117px;
+	height: 117px;
+	border: 1px solid #FFD028;
+	border-radius: 50%;
+	box-sizing: border-box;
+	text-align: center;
+}
+.right-area article.delivery .process li:nth-child(odd).active {
+	background: #FFD028;
+}
+.right-area article.delivery .process p {
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 34px;
+	margin-top: 20px;
+}
+.right-area article.delivery .process p span {
+	display: block;
+	font-size: 25px;
+	font-weight: 400;
+	line-height: 30px;
+	color: rgba(34, 34, 34, 0.8);
+}
+
+.right-area article.purchase-item {
+	margin: 30px 0;
+}
+.right-area article.like {}
+.right-area article .title {
+	display: flex;
+	justify-content: space-between;
+}
+.right-area article .title h3 {}
+.right-area article .title button {
+	font-size: 12px;
+	background: none;
+	color: #222222;
+}
+.right-area article .title button i {
+	font-size: 10px;
+	margin-left: 5px;
+}
+.right-area article .list {
+	display: flex;
+	justify-content: space-between;
+	width: 100%;
+	padding: 20px 28px 0;
+	margin-top: 10px;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(34, 34, 34, 0.3);
+}
+.right-area article .list div {
+	display: inline-block;
+	width: 150px;
+	height: 150px;
+	box-sizing: border-box;
+	border-radius: 10px;
+}
+.right-area article .list div.hidden {
+	visibility: hidden;
+}
+.right-area div.banner {}
+.right-area div.banner div {
+	width: 100%;
+	height: 100px;
+}
+.right-area div.banner div.event-1 {
+	text-align: center;
+	background: #A8D9B9 url("../customer service/my_banner1.png") no-repeat center;
+	margin: 30px 0 10px;
+}
+.right-area div.banner div.event-1 p {
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 100px;
+	padding-right: 90px;
+	color: white;
+}
+.right-area div.banner div.event-2 {
+	background: #5274AE url("../customer service/my_banner2.png") no-repeat center;
+}

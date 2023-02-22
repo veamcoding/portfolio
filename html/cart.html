@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cart</title>
+	<link href="../favicon.png" rel="shortcut icon">
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/common.css">
+    <link rel="stylesheet" href="../css/cart.css">
+</head>
+<body>
+<section class="layout">
+
+	<!-- Header Section	-->
+	<header class="header">
+
+		<div class="innerHeader">
+
+			<div class="mobile-menu off"><img src="../main/m_header_menu_icon.png" alt=""></div>
+
+			<h1 class="logo">
+				<a href="../index.html"><img src="../main/logo_b.png" alt=""></a>
+			</h1>
+
+			<ul class="GNB">
+				<li><a target="_blank" href="../html/ProductSelection.html">상품</a></li>
+				<li><a target="_blank" href="../html/Cartoon.html">프렌즈 일상</a></li>
+				<li><a target="_blank" href="../html/store.html">스토어</a></li>
+				<li><a target="_blank" href="../html/brand.html">브랜드소개</a></li>
+			</ul>
+
+			<ul class="sub_gnb">
+				<li><a target="_blank" href="../html/event-notice.html">공지사항</a></li>
+				<li><a target="_blank" href="../html/CustomerService.html">고객센터</a></li>
+				<li><a target="_blank" href="../html/mypage.html"><img src="../main/icon_gnb_user.png" alt=""></a></li>
+				<li><a target="_blank" href="../html/cart.html"><img src="../main/icon_gnb_bag.png" alt=""></a></li>
+			</ul>
+		</div>
+
+	</header>
+
+	<!-- Title Section	-->
+    <section class="cart-title">
+        <section class="inner">
+            <h2>장바구니</h2>
+            <div class="costSave">
+                <p>30,000원 이상 구매시
+                    <strong>무료배송</strong></p>
+                <button><span>배송비 절약하기</span></button>
+            </div>
+        </section>
+    </section>
+
+    <!-- Contents Section	-->
+    <section class="contents">
+	    <section class="inner">
+		    <!-- CartList Section	-->
+		    <div class="select-check">
+			    <input type="checkbox" id="selectAll"><label for="selectAll">전체선택</label>
+			    <ul>
+				    <li class="removeAll">전체삭제</li>
+				    <li>｜</li>
+				    <li class="delete-Selection">선택삭제</li>
+			    </ul>
+		    </div>
+		    
+		    <!-- Address & payment	-->
+		    <aside class="address-payment">
+			    <div class="address">
+				    <h3>배송정보</h3>
+					<div>
+						<p>
+						<span>기본배송지 : 김지현</span>
+						[00000] 경기 김포시 사우중로 1 김포시청
+						000동 0000호
+						</p>
+						<button>배송지 변경</button>
+					</div>
+			    </div>
+			    <div class="payment">
+				    <h3>결제금액</h3>
+					<div>
+						<ul class="totalPrice-items">
+							<li>상품금액<p><strong class="amPrice-sum">64,000</strong>원</p></li>
+							<li>할인금액<p><strong class="salePrice">12,000</strong>원</p></li>
+							<li>배송비<p><strong class="deliveryPrice">3,000</strong>원</p></li>
+							<li>총 결제금액<p><strong class="totalPrice"></strong>원</p></li>
+						</ul>
+						<button><span>주문하기</span></button>
+					</div>
+			    </div>
+		    </aside>
+		    
+		    <!-- CartList Section	-->
+		    <ul class="cartList">
+			    <li class="list list1">
+				    <input type="checkbox" name="chk" id="selectItem1">
+				    <label for="selectItem1">
+					    <img class="item-img" src="../cart/list_item01.png" alt="">
+				    </label>
+				    
+					<p class="item-name">매트튜브_죠르디</p>
+				    <div class="item-price">
+					    금액 : <strong class="price">39,000</strong>원
+				    </div>
+				
+				    <div class="quantity-box">
+					    <input type="button" class="down" value="-">
+					    <input type="text" class="number" value="1">
+					    <input type="button" class="up" value="+">
+				    </div>
+				
+				    <div class="itemAmount-price">
+					    합계 : <strong class="am-price">16,000</strong>원
+				    </div>
+				    
+				    <button class="trash-btn"><img src="../cart/trash.png" alt=""></button>
+			    </li>
+			    <li class="list list2">
+				    <input type="checkbox" name="chk" id="selectItem2">
+				    <label for="selectItem2">
+					    <img class="item-img" src="../cart/list_item02.png" alt="">
+				    </label>
+				
+				    <p class="item-name">피규어 주차번호판_죠르디</p>
+				    <div class="item-price">
+					    금액 : <strong class="price">16,000</strong>원
+				    </div>
+				
+				    <div class="quantity-box">
+					    <input type="button" class="down" value="-">
+					    <input type="text" class="number" value="1">
+					    <input type="button" class="up" value="+">
+				    </div>
+				
+				    <div class="itemAmount-price">
+					    합계 : <strong class="am-price">16,000</strong>원
+				    </div>
+				
+				    <button class="trash-btn"><img src="../cart/trash.png" alt=""></button>
+			    </li>
+			    <li class="list list3">
+				    <input type="checkbox" name="chk" id="selectItem3">
+				    <label for="selectItem3">
+					    <img class="item-img" src="../cart/list_item03.png" alt="">
+				    </label>
+				
+				    <p class="item-name">탁상 무드등 전자시계_라이언&춘식이</p>
+				    <div class="item-price">
+					    금액 : <strong class="price">49,000</strong>원
+				    </div>
+				
+				    <div class="quantity-box">
+					    <input type="button" class="down" value="-">
+					    <input type="text" class="number" value="1">
+					    <input type="button" class="up" value="+">
+				    </div>
+				
+				    <div class="itemAmount-price">
+					    합계 : <strong class="am-price">16,000</strong>원
+				    </div>
+				
+				    <button class="trash-btn"><img src="../cart/trash.png" alt=""></button>
+			    </li>
+			    <li class="list list4">
+				    <input type="checkbox" name="chk" id="selectItem4">
+				    <label for="selectItem4">
+					    <img class="item-img" src="../cart/list_item04.png" alt="">
+				    </label>
+				
+				    <p class="item-name">워터보틀 500ml_라이언&춘식이</p>
+				    <div class="item-price">
+					    금액 : <strong class="price">20,000</strong>원
+				    </div>
+				
+				    <div class="quantity-box">
+					    <input type="button" class="down" value="-">
+					    <input type="text" class="number" value="1">
+					    <input type="button" class="up" value="+">
+				    </div>
+				
+				    <div class="itemAmount-price">
+					    합계 : <strong class="am-price">16,000</strong>원
+				    </div>
+				
+				    <button class="trash-btn"><img src="../cart/trash.png" alt=""></button>
+			    </li>
+			    <li class="list list5">
+				    <input type="checkbox" name="chk" id="selectItem5">
+				    <label for="selectItem5">
+					    <img class="item-img" src="../cart/list_item05.png" alt="">
+				    </label>
+				
+				    <p class="item-name">핸디형 미니 선풍기_라이언</p>
+				    <div class="item-price">
+					    금액 : <strong class="price">22,000</strong>원
+				    </div>
+				
+				    <div class="quantity-box">
+					    <input type="button" class="down" value="-">
+					    <input type="text" class="number" value="1">
+					    <input type="button" class="up" value="+">
+				    </div>
+				
+				    <div class="itemAmount-price">
+					    합계 : <strong class="am-price">16,000</strong>원
+				    </div>
+				
+				    <button class="trash-btn"><img src="../cart/trash.png" alt=""></button>
+			    </li>
+			    <li class="list list6">
+				    <input type="checkbox" name="chk" id="selectItem6">
+				    <label for="selectItem6">
+					    <img class="item-img" src="../cart/list_item06.png" alt="">
+				    </label>
+				
+				    <p class="item-name">핸디형 미니 선풍기_라이언</p>
+				    <div class="item-price">
+					    금액 : <strong class="price">22,000</strong>원
+				    </div>
+				
+				    <div class="quantity-box">
+					    <input type="button" class="down" value="-">
+					    <input type="text" class="number" value="1">
+					    <input type="button" class="up" value="+">
+				    </div>
+				
+				    <div class="itemAmount-price">
+					    합계 : <strong class="am-price">16,000</strong>원
+				    </div>
+				
+				    <button class="trash-btn"><img src="../cart/trash.png" alt=""></button>
+			    </li>
+		    </ul>
+
+			<!--  RECOMMEND Section	-->
+			<section class="recommend">
+				<section class="inner">
+					<div class="how_about">
+						<div class="title">
+							잠깐만,<br>
+							이 상품은 어때요?
+						</div>
+						<div class="items">
+							<img src="../main/rank_item1.jpg" alt="">
+							<img src="../main/rank_item2.png" alt="">
+							<img src="../main/rank_item3.png" alt="">
+							<img src="../main/rank_item4.png" alt="">
+							<img src="../main/rank_item5.png" alt="">
+						</div>
+					</div>
+					<div class="recent">
+						<div class="title">
+							최근 본 상품이<br>
+							요기 있네
+						</div>
+						<div class="items">
+							<img src="../main/rank_item1.jpg" alt="">
+							<img src="../main/rank_item2.png" alt="">
+							<img src="../main/rank_item3.png" alt="">
+							<img src="../main/rank_item4.png" alt="">
+							<img src="../main/rank_item5.png" alt="">
+						</div>
+					</div>
+				</section>
+			</section>
+	    </section>
+    </section>
+
+	<!-- Popup Section	-->
+	<section class="popUp">
+
+		<form class="changeAddress">
+			<div class="close_btn">
+				<span></span>
+				<span></span>
+			</div>
+			<h2>배송지 변경</h2>
+			<div class="name">
+				<span>받는 분</span>
+				<input type="text" placeholder="이름을 입력하세요">
+			</div>
+
+			<div class="mobile">
+				<span>휴대폰</span>
+				<select name="mobileNum first">
+					<option value="tel" selected="selected">선택</option>
+					<option value="tel">010</option>
+					<option value="tel">011</option>
+				</select>
+				<em>-</em>
+				<input type="tel" placeholder="">
+				<em>-</em>
+				<input type="tel" placeholder="">
+			</div>
+			<div class="call">
+				<span>전화번호<em>(선택)</em></span>
+				<select name="phoneNum first">
+					<option value="tel" selected="selected">선택</option>
+					<option value="tel">010</option>
+					<option value="tel">011</option>
+				</select>
+				<em>-</em>
+				<input type="tel" placeholder="">
+				<em>-</em>
+				<input type="tel" placeholder="">
+			</div>
+			<div class="address">
+				<span>배송주소</span>
+				<input type="text" placeholder="">
+				<button>우편번호 찾기</button>
+				<input type="text" placeholder="상세 주소를 입력하세요">
+			</div>
+
+			<label>
+				<input type="checkbox" value="">
+				<em>기본 배송지로 설정</em>
+			</label>
+			<button>확인</button>
+		</form>
+
+	</section>
+
+    <!-- FOOTER-LITE Section	-->
+    <footer class="footer">
+        <section class="inner">
+            <ul class="link">
+                <li><a href="#">제휴문의</a></li>
+                <li><a href="#">고객문의</a></li>
+                <li><a href="#">이용약관</a></li>
+                <li><a href="#"><strong>개인정보처리방침</strong></a></li>
+                <li><a href="#">지식재산권보호센터</a></li>
+            </ul>
+
+            <img src="../productSelection/top_btn_footer_lite.png" alt="">
+
+            <div class="select-box">
+                <ul class="language">
+                    <li><a href="#">카카오</a></li>
+                    <li><a href="#">카카오 AI</a></li>
+                    <li><a href="#">카카오 프라이버시</a></li>
+                    <li><a href="#">카카오 디벨로퍼스</a></li>
+                    <li><a href="#">다음 포털 사이트</a></li>
+                    <li><a href="#">동반 성장 사이트</a></li>
+                </ul>
+                <div>FAMILY SITE<i class="xi-angle-up"></i></div>
+            </div>
+
+        </section>
+    </footer>
+
+</section>
+
+<script src="../js/jquery-3.6.0.min.js"></script>
+<script src="../js/cart.js"></script>
+</body>
+</html>

@@ -1,0 +1,416 @@
+/*Poppins 폰트링크*/
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+/*font-family:'Poppins', sans-serif;*/
+
+/*Pretendard 폰트링크*/
+@import url('https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css');
+/* XEION CDN */
+@import url('http://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css');
+
+@font-face {
+	font-family: 'Cafe24 Ssurround';
+	font-style: normal ;
+	font-weight: 500;
+	src: url("../font/Cafe24Ssurround.ttf");
+}
+@font-face {
+	font-family: 'Cafe24 SsurroundAir';
+	font-style: normal ;
+	font-weight: 200;
+	src: url("../font/Cafe24SsurroundAir.ttf");
+}
+body {
+	font-family: 'Pretendard', 'Noto Sans KR', sans-serif, '돋움';
+	font-style: normal;
+	font-weight: 300;
+	line-height: 1;
+	color: #222;
+}
+body.stop {
+	overflow: hidden;
+}
+body::-webkit-scrollbar {
+	width: 5px;
+	height: 5px;
+}
+body::-webkit-scrollbar-thumb {
+	background: #ffd500;
+	border-radius: 5px;
+}
+body::-webkit-scrollbar-track {
+	background: #ffffff;
+}
+a, em, i {
+	text-decoration: none;
+	font-style: normal;
+	color: #222;
+}
+input {
+	margin: 0;
+	padding: 0;
+	outline: none;
+	border: none;
+}
+button {
+	border: none;
+	padding: 0;
+	background: #222222;
+	
+	color: white;
+	font-size: 15px;
+	font-weight: 500;
+	letter-spacing: -0.02em;
+	cursor: pointer;
+}
+.layout {
+	position: relative;
+	max-width: 1920px;
+	/*min-width: 1440px;*/
+	overflow: hidden;
+	margin: 0 auto;
+}
+.inner {
+	width: 1400px;
+	margin: 0 auto;
+}
+h2 {
+	font-family:'Poppins', sans-serif;
+	font-size: 50px;
+	font-weight: 700;
+	line-height: 75px;
+}
+.title h2 {
+	position: relative;
+	width: max-content;
+	margin: 0 auto;
+}
+.title h2::after {
+	content: "";
+	display: block;
+	position: absolute;
+	height: 8px;
+	background: #FFEB33;
+}
+h3 {
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 30px;
+	letter-spacing: -0.01em;
+}
+/*---------------- HEADER ----------------*/
+.header {
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 60;
+	
+	margin-top: 30px;
+	font-size: 18px;
+	font-weight: 500;
+	overflow: hidden;
+	line-height: 1;
+}
+.header .m_icon {
+	display: none;
+}
+.header .GNB {}
+.header .logo {
+	font-size: 0;
+}
+
+.header ul {}
+.header .innerHeader {
+	position: relative;
+	max-width: 1280px;
+	margin: 0 auto;
+	display: flex;
+	align-items: center;
+}
+.header .mobile-menu.off {
+	display: none;
+}
+.header .logo {}
+.header .logo a {}
+.header .logo img {
+	width: 80px;
+}
+.header .GNB {
+	margin-left: 80px;
+}
+.header .GNB li {
+	float: left;
+}
+.header .GNB li:not(:first-child) {
+	margin-left: 80px;
+}
+.header .sub_gnb {
+	position: absolute;
+	right: 0;
+	display: flex;
+	align-items: center;
+	font-size: 16px;
+}
+.header .sub_gnb li:nth-child(2) {
+	margin-left: 30px;
+}
+.header .sub_gnb li:nth-child(3) {
+	margin-left: 51px;
+	cursor: pointer;
+}
+.header .sub_gnb li:nth-child(4) {
+	margin-left: 18px;
+}
+/*---------------- PopUp ----------------*/
+.popUp  {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 500px;
+	z-index: 100;
+	display: none;
+}
+.popUp.on {
+	display: block;
+}
+.popUp form {
+	position: absolute;
+	top: 30%;
+	left: 50%;
+	transform: translate(-50%, 0);
+	width: 554px;
+	height: 571px;
+	background: white;
+	border: 1px solid #a9a9a9;
+	box-sizing: border-box;
+}
+.popUp .close_btn {
+	position: relative;
+	float: right;
+	top: -30px;
+	right: -40px;
+	width: 32px;
+	height: 32px;
+	cursor: pointer;
+}
+.popUp .close_btn span {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 30px;
+	height: 1px;
+	background: #222222;
+}
+.popUp .close_btn span:first-child {
+	transform: translate(0, 50%) rotate(45deg);
+}
+.popUp .close_btn span:last-child {
+	transform: translate(0, 50%) rotate(-45deg);
+}
+/*logIn*/
+.popUp.logIn form.logIn {
+	background-color: white;
+	background-image: url("../cart/login_title.png");
+	background-repeat: no-repeat;
+	background-position: top;
+	padding: 170px 110px 89px 100px;
+}
+.popUp.logIn .logIn .close_btn {
+	top: -115px;
+	right: -58px;
+}
+.popUp.logIn .logIn > div:not(.close_btn) span {
+	display: inline-block;
+	font-size: 16px;
+	font-weight: 600;
+	line-height: 30px;
+	padding: 15px 20px 0 0;
+}
+.popUp.logIn .logIn > div input {
+	width: 100%;
+	height: 30px;
+	border-bottom: 1px solid rgba(34, 34, 34, 0.4);
+	box-sizing: border-box;
+	padding-left: 10px;
+	margin-top: 3px;
+}
+.popUp.logIn .logIn > div input::placeholder {
+	font-size: 12px;
+	font-weight: 400;
+	line-height: 30px;
+	color: rgba(39, 39, 39, 0.5);
+}
+.popUp.logIn .logIn > div input:focus::placeholder {
+	visibility: hidden;
+}
+.popUp.logIn .logIn div.pw {
+	margin-bottom: 13px;
+}
+.popUp.logIn .logIn > label {
+	float: left;
+	display: flex;
+	justify-content: left;
+	font-size: 13px;
+	font-weight: 600;
+	color: #222222;
+	margin: 10px 0;
+	cursor: pointer;
+}
+.popUp.logIn .logIn label input {
+	margin: 0 5px 0 0;
+}
+.popUp.logIn .logIn ul {
+	display: flex;
+	float: right;
+}
+.popUp.logIn .logIn ul li {
+	font-size: 13px;
+	font-weight: 600;
+	line-height: 33px;
+}
+.popUp.logIn .logIn ul li:not(:nth-child(2)) {
+	cursor: pointer;
+}
+.popUp.logIn .logIn div.btn {
+	display: flex;
+	width: 100%;
+	border-bottom: 1px solid rgba(0, 0, 0, 0.3);
+	padding: 10px 0 20px 0;
+	margin-bottom: 20px;
+}
+.popUp.logIn .logIn button {
+	width: 100%;
+	height: 50px;
+	border-radius: 5px;
+	font-size: 15px;
+	font-weight: 600;
+	line-height: 30px;
+}
+.popUp.logIn .logIn div.btn button {
+	flex: 1;
+	height: 45px;
+}
+.popUp.logIn .logIn div.btn button:nth-child(1) {
+	background: white;
+	border: 1px solid #222222;
+	color: #222222;
+	margin-right: 10px;
+}
+/*---------------- m_GNB ----------------*/
+
+.popUp.m_GNB form.m_GNB {
+	position: absolute;
+	top: 0;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 100%;
+	height: 400px;
+	background: #222222;
+	border: none;
+	border-radius: 0 0 100px 100px;
+	box-sizing: border-box;
+}
+.popUp.m_GNB .m_GNB .close_btn {
+	float: end;
+	top: 340px;
+	right: 50%;
+	transform: translateX(50%);
+	width: 22px;
+	height: 22px;
+}
+.popUp.m_GNB .close_btn span {
+	position: absolute;
+	top: 50%;
+	left: 0;
+	width: 30px;
+	height: 1px;
+	background: white;
+}
+.popUp.m_GNB .m_GNB ul {
+	text-align: center;
+	margin-top: 70px;
+}
+.popUp.m_GNB .m_GNB ul a {
+	font-size: 27px;
+	font-weight: 600;
+	line-height: 62px;
+	color: white
+}
+/*---------------- FOOTER ----------------*/
+.footer {
+	background: #363636;
+	font-size: 17px;
+	font-weight: 500;
+	line-height: 30px;
+	padding: 43px 0 46px;
+}
+.footer .inner {
+	position: relative;
+}
+.footer .link {
+	display: flex;
+	justify-content: space-between;
+	width: 470px;
+	margin-bottom: 20px;
+}
+.footer ul li {}
+.footer ul li a {
+	color: white;
+}
+.footer .desc {
+	display: block;
+	font-size: 15px;
+	letter-spacing: -0.04em;
+	color: #606060;
+}
+.footer .select-box {
+	position: absolute;
+	top: 0;
+	right: 0;
+	font-size: 10px;
+	z-index: 10;
+}
+.footer .select-box div {
+	width: 240px;
+	height: 30px;
+	background: #3E3D3D;
+	color: white;
+	font-size: 13px;
+	font-weight: 500;
+	line-height: 32px;
+	letter-spacing: -0.04em;
+	text-align: center;
+}
+.footer .select-box div i {
+	font-size: 12px;
+	margin-left: 10px;
+	color: white;
+	transform: rotate(180deg);
+	transition: 0.3s;
+}
+.footer .select-box ul {
+	display: none;
+}
+.footer .select-box ul li a {
+	display: block;
+	font-size: 13px;
+	background: white;
+	text-align: center;
+	color: #222222;
+	padding: 0 20px;
+	transition: 0.3s;
+}
+.footer .select-box:hover ul {
+	display: block;
+}
+.footer .select-box ul li a:hover {
+	color: white;
+	background: #2b2b2b;
+}
+.footer .select-box:hover div i {
+	transform: rotate(0);
+}
+
+
+

@@ -1,0 +1,240 @@
+/*---------------- CS-TITLE ----------------*/
+.CS-Title {
+	padding: 95px 0 110px;
+}
+.CS-Title .inner {
+	display: flex;
+	justify-content: space-between;
+}
+.CS-Title h2 {
+	font-size: 50px;
+	font-weight: 600;
+	line-height: 60px;
+}
+.CS-Title .costSave {
+	display: flex
+}
+.CS-Title .costSave p {
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 22px;
+	text-align: right;
+	margin: 4px 23px 0 0;
+}
+.CS-Title .costSave p strong {
+	display: block;
+	font-size: 20px;
+	line-height: 24px;
+}
+.CS-Title .costSave button {
+	position: relative;
+	display: inline-block;
+	width: 200px;
+	height: 48px;
+	border: none;
+	background: #222222;
+	border-radius: 25px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+.CS-Title .costSave button span {
+	position: relative;
+	top: 0;
+	left: 0;
+	display: inline-block;
+	font-size: 15px;
+	font-weight: 900;
+	line-height: 20px;
+	color: #F5BF00;
+	width: 100%;
+	transition: 0.3s;
+}
+.CS-Title .costSave button::before {
+	position: absolute;
+	top: 0;
+	left: 0;
+	display: block;
+	content: "";
+	color: #222222;
+	width: 0;
+	height: 100%;
+	visibility: hidden;
+	background: #FFD028;
+	transition: 0.3s;
+}
+.CS-Title .costSave button:hover::before {
+	width: 100%;
+	visibility: visible;
+}
+.CS-Title .costSave button:hover span {
+	color: #222222;
+}
+.CS-Title .notice {
+	height: 190px;
+	background: #FED400 url("../customer service/notice_bg.png") no-repeat right;
+	padding: 65px 320px 0 80px;
+	box-sizing: border-box;
+	margin-top: 42px;
+}
+.CS-Title .notice p {
+	font-size: 20px;
+	font-weight: 400;
+	line-height: 33px;
+}
+.CS-Title .notice p strong {
+	display: block;
+	font-weight: 800;
+	font-size: 25px;
+}
+/*---------------- QnA ----------------*/
+.QnA {}
+.QnA .title {
+	text-align: center;
+}
+.QnA .title h3 {
+	font-size: 40px;
+	font-weight: 700;
+	line-height: 48px;
+}
+.QnA .title nav {
+	display: inline-block;
+	margin: 60px 0 20px;
+}
+.QnA .title nav ul {
+	display: flex;
+	justify-content: space-between;
+	width: 840px;
+}
+.QnA .title nav ul li {
+	position: relative;
+	font-size: 17px;
+	font-weight: 400;
+}
+.QnA .title nav ul li a::after {
+	display: block;
+	content: attr(data-link);
+}
+.QnA .title nav ul li::before {
+	content: "";
+	display: block;
+	position: absolute;
+	bottom: -5px;
+	left: 50%;
+	transform: translateX(-50%);
+	
+	width: 0;
+	height: 2px;
+	background: #FED400;
+	transition: 0.3s;
+}
+.QnA .title nav ul li:hover::before {
+	width: 100%;
+}
+.QnA .title nav ul li a {
+	font-size: 17px;
+	font-weight: 400;
+}
+.QnA .contents {
+	padding: 35px 0 156px;
+	box-sizing: border-box;
+	border-top: 1px solid rgba(34, 34, 34, 0.5);
+	overflow: hidden;
+}
+.QnA .contents .Q-list {
+	float: left;
+}
+.QnA .contents .Q-list ul {}
+.QnA .contents .Q-list ul li {
+	display: block;
+	width: 680px;
+	height: 60px;
+	border-bottom: 1px solid rgba(34, 34, 34, 0.2);
+	padding-top: 20px;
+	box-sizing: border-box;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 19px;
+	cursor: pointer;
+}
+.QnA .contents .Q-list ul li.active {
+	background: #E2E2E2;
+}
+.QnA .contents .Q-list ul li strong {
+	display: inline-block;
+	width: 100px;
+	padding-left: 15px;
+}
+.QnA .contents .Q-list ul li p {
+	display: inline-block;
+}
+.QnA .contents .Q-list .page-btn {
+	display: flex;
+	justify-content: space-between;
+	width: 135px;
+	margin: 24px auto 0;
+}
+.QnA .contents .Q-list .page-btn i {
+	width: 25px;
+	height: 25px;
+	border: 1px solid #222222;
+	border-radius: 50%;
+	text-align: center;
+	font-size: 10px;
+	line-height: 25px;
+}
+.QnA .contents .Q-list .page-btn p {
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 22px;
+}
+.QnA .contents .response {
+	float: right;
+	width: 680px;
+	height: 480px;
+	border: 1px solid rgba(34, 34, 34, 0.5);
+}
+.QnA .contents .response .Q-title {
+	height: 60px;
+	font-size: 20px;
+	font-weight: 900;
+	background: #FED400;
+	padding-left: 40px;
+}
+.QnA .contents .response .Q-title em {
+	font-size: 18px;
+	font-weight: 800;
+	line-height: 58px;
+	margin-left: 20px;
+}
+.QnA .contents .response .desc {
+	width: 680px;
+	height: 400px;
+	overflow: scroll;
+}
+.QnA .contents .response .desc img {
+	float: left;
+	margin: 30px 0 0 40px;
+}
+.QnA .contents .response .desc p {
+	float: left;
+	font-size: 15px;
+	font-weight: 400;
+	line-height: 28px;
+	width: 460px;
+	white-space: pre;
+	margin-left: -165px;
+	display: none;
+}
+.QnA .contents .response .desc p.active {
+	display: block;
+}
+.QnA .contents .response .desc::-webkit-scrollbar {
+	width: 5px;
+}
+.QnA .contents .response .desc::-webkit-scrollbar-thumb {
+	background: #ffd500;
+	border-radius: 5px;
+}
+.QnA .contents .response .desc::-webkit-scrollbar-track {
+	background: #ffffff;
+}

@@ -1,0 +1,216 @@
+.contents h3 {
+    position: relative;
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 54px;
+    font-weight: 700;
+    line-height: 81px;
+}
+.contents h3::after {
+    display: block;
+    position: absolute;
+    bottom: 5px;
+    left: 0;
+    content: "";
+    height: 8px;
+    background: #FFEB33;
+}
+/*---------------- MAIN ----------------*/
+.main {
+    margin-top: 30px;
+    background: #7AB7E4;
+}
+.main .visual {
+    height: 400px;
+    background: url("../event-notice/visual.png") no-repeat right;
+}
+.main .visual .title {
+    margin-left: 237px;
+}
+.main .visual .title h2 {
+    font-family: 'Poppins', sans-serif;
+    font-style: normal;
+    font-size: 60px;
+    font-weight: 700;
+    line-height: 70px;
+    color: white;
+    padding: 130px 0 20px;
+    box-sizing: border-box;
+}
+.main .visual .title p {
+    font-size: 17px;
+    font-weight: 500;
+    line-height: 28px;
+    color: #2a2a2a;
+}
+/*---------------- CONTENTS ----------------*/
+.contents {}
+.contents .event {
+    position: relative;
+    padding: 123px 0 187px;
+    box-sizing: border-box;
+}
+.contents .event h3 {
+    position: relative;
+    width: 170px;
+    margin: 0 auto 50px;
+    padding-right: 35px;
+}
+.contents .event h3::after {
+    width: 170px;
+}
+.contents .event .event-slide {
+    width: 1160px;
+    height: 545px;
+    margin: 0 auto;
+}
+.contents .event .event-slide div:nth-child(2) {
+
+}
+.contents .event .event-slide .slick-slide {
+    width: 360px;
+    height: 520px;
+    margin-right: 40px;
+    background: #5274AE;
+}
+.contents .event .event-slide .slick-slide img {
+    width: 100%;
+    height: 100%;
+}
+.contents .event .arrow {
+    position: absolute;
+    top: 500px;
+    left: 50px;
+    /*left: 50%;*/
+    /*transform: translateX(-50%);*/
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.contents .event .arrow img {
+    display: block;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+}
+
+
+/*---------------- NOTICE ----------------*/
+.notice {}
+.notice h3 {
+    width: 200px;
+    margin: 0 auto;
+}
+.contents .notice h3::after {
+    width: 200px;
+}
+.notice .contents {
+    padding: 70px 0 156px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.notice .contents .Q-list {
+    float: left;
+}
+.notice .contents .Q-list ul {}
+.notice .contents .Q-list ul li {
+    display: flex;
+    align-items: center;
+    width: 680px;
+    height: 60px;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.2);
+    box-sizing: border-box;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19px;
+    cursor: pointer;
+}
+.notice .contents .Q-list ul li.active {
+    background: #E2E2E2;
+}
+.notice .contents .Q-list ul li.off {
+    display: none;
+}
+.notice .contents .Q-list ul li strong {
+    flex: 1;
+    width: 154px;
+    padding-left: 15px;
+}
+.notice .contents .Q-list ul li p {
+    flex: 4;
+}
+.notice .contents .Q-list .page-btn {
+    display: flex;
+    justify-content: space-between;
+    width: 135px;
+    margin: 24px auto 0;
+}
+.notice .contents .Q-list .page-btn i {
+    width: 25px;
+    height: 25px;
+    border: 1px solid #222222;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 10px;
+    line-height: 25px;
+}
+.notice .contents .Q-list .page-btn p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.notice .contents .response {
+    float: right;
+    width: 680px;
+    height: 480px;
+    border: 1px solid rgba(34, 34, 34, 0.5);
+}
+.notice .contents .response .Q-title {
+    height: 60px;
+    font-size: 20px;
+    font-weight: 900;
+    background: #FED400;
+    padding-left: 40px;
+}
+.notice .contents .response .Q-title em {
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 58px;
+    margin-left: 20px;
+}
+.notice .contents .response .desc {
+    width: 680px;
+    height: 400px;
+    overflow: scroll;
+}
+.notice .contents .response .desc img {
+    float: left;
+    margin: 30px 0 0 40px;
+}
+.notice .contents .response .desc p {
+    float: left;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    width: 460px;
+    white-space: pre;
+    margin-left: -94px;
+    display: none;
+}
+.notice .contents .response .desc p.active {
+    display: block;
+}
+.notice .contents .response .desc::-webkit-scrollbar {
+    width: 5px;
+    height: 5px;
+}
+.notice .contents .response .desc::-webkit-scrollbar-thumb {
+    background: #ffd500;
+    border-radius: 5px;
+}
+.notice .contents .response .desc::-webkit-scrollbar-track {
+    background: #ffffff;
+}
+
+
+

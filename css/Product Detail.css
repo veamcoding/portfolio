@@ -1,0 +1,459 @@
+/*---------------- MAIN ----------------*/
+.contents {
+    display: flex;
+    height: 100%;
+}
+.wrap {
+    display: flex;
+    flex-direction: column;
+}
+.main {
+    height: calc(100vh - 67px);
+    display: flex;
+    margin-top: 67px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+.main .info {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    width: 32.2917vw;
+    /*padding: 620px 56px 0 0;*/
+    padding: 0 56px 0 0;
+    box-sizing: border-box;
+}
+.main .info .accordion-list {}
+.main .info .accordion-list .title {
+    /*float: right;*/
+    width: 360px;
+    height: 50px;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.5);
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 52px;
+    text-align: right;
+    transition: 0.3s;
+    cursor: pointer;
+}
+.main .info .accordion-list .title i {
+    font-size: 13px;
+    margin-left: 5px;
+}
+.main .info .accordion-list .desc {
+    /*float: left;*/
+    width: 420px;
+    white-space: pre;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    letter-spacing: -0.03em;
+    margin-left: -170px;
+    display: none;
+}
+.main .info .accordion-list .desc.on {
+    display: block;
+}
+.main .item {
+    position: relative;
+    width: 35.4167vw;
+}
+.main .item .slider {
+    position: relative;
+    width: 450px;
+    height: 450px;
+    margin: 100px auto 0;
+}
+.main .item .slider .slick-slide {
+    width: 450px;
+    height: 450px;
+}
+.main .item .slider .slick-slide img {
+    width: 100%;
+}
+.main .item .slider .slick-dots {
+    position: absolute;
+    top: 592px;
+    left: 50%;
+    transform: translateX(-50%);
+    font-weight: 500;
+    z-index: 10;
+}
+.main .item .slider .slick-dots li {
+    display: none;
+}
+.main .item .slider .slick-dots li.slick-active {
+    display: block;
+}
+.main .item .slider .slick-dots li button {
+    display: none;
+}
+
+.main .item .slide-btn {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    width: 250px;
+    top: 680px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.main .item .slide-btn button {
+    text-align: center;
+    width: 40px;
+    height: 40px;
+    border: 1px solid #222222;
+    border-radius: 50%;
+    line-height: 40px;
+    background: white;
+}
+.main .item .slide-btn button:hover {
+    background: #FFD028;
+}
+.main .item .slide-btn .pagingNum {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 24px;
+    letter-spacing: -0.02em;
+    text-align: center;
+}
+.purchase {
+    position: relative;
+    top: 0;
+    right: 0;
+    width: 32.2917vw;
+    height: auto;
+}
+.purchase .box {
+    position: fixed;
+    width: 26.0417vw;
+    height: 44.2708vw;
+    min-height: 800px;
+    background: #FFFFFF;
+    border: 5px solid #FFD028;
+    border-radius: 100px;
+    padding: 108px 70px 0 60px;
+    box-sizing: border-box;
+    margin-top: 97px;
+}
+.purchase .box .item-info {}
+.purchase .box .item-info span {
+    font-weight: 400;
+    line-height: 18px;
+}
+.purchase .box .item-info span strong {}
+.purchase .box .item-info p {
+    width: max-content;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 36px;
+    letter-spacing: 0.01em;
+    background: #FFD028;
+    padding: 0 8px;
+    border-radius: 5px;
+    margin: 10px 0 20px;
+}
+.purchase .box .price_icon {
+    display: flex;
+    justify-content: space-between;
+}
+.purchase .box .price_icon .price {
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+}
+.purchase .box .price_icon .icon {
+    display: flex;
+}
+.purchase .box .price_icon .icon li {
+    width: 20px;
+    height: 18px;
+    background-image: url("../productDetail/icon_heart.png");
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.purchase .box .price_icon .icon li:nth-child(1).active {
+    background-image: url("../productDetail/icon_heart_check.png");
+}
+.purchase .box .price_icon .icon li:nth-child(2) {
+    background-image: url("../productDetail/icon_link.png");
+    margin-left: 20px;
+}
+.purchase .box .benefit {
+    display: flex;
+    height: 40px;
+    border-bottom: 1px solid #222222;
+    margin: 23px 0 20px;
+}
+.purchase .box .benefit span {
+    font-size: 14px;
+    line-height: 17px;
+    letter-spacing: -0.02em;
+    font-weight: 400;
+    margin-left: 5px;
+}
+.purchase .box .benefit span:last-child {
+    margin-left: 20px;
+}
+.purchase .calc_price {
+    display: flex;
+    justify-content: space-between;
+}
+.purchase .calc_price .calc {
+    display: flex;
+    justify-content: space-between;
+    width: 166px;
+}
+.purchase .calc_price .calc input {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    background: white;
+    width: 35px;
+    height: 35px;
+    border: none;
+    font-size: 18px;
+    color: #222222;
+    text-align: center;
+}
+.purchase .calc_price .calc input[type=button] {
+    font-size: 18px;
+    border: 1px solid #222222;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.purchase .calc_price .amount_price {
+    font-size: 22px;
+    font-weight: 400;
+    line-height: 26px;
+}
+.purchase .calc_price .amount_price em {}
+.purchase .btn-box {
+    display: flex;
+    justify-content: space-between;
+    margin: 22px 0 28px;
+}
+.purchase .btn-box button {
+    font-size: 0.8333vw;
+    font-weight: 600;
+    line-height: 20px;
+    text-align: center;
+    color: #222222;
+
+    padding: 9px 2.8vw 7px;
+    background: #FFD028;
+    border-radius: 20px;
+}
+.purchase .btn-box button:last-child {
+    background: none;
+    border: 2px solid #FFD028;
+    border-radius: 22px;
+    box-sizing: border-box;
+}
+.purchase .review {
+    height: 290px;
+}
+.purchase .review .title {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 5px 5px;
+    border-bottom: 2px solid #FFD028;
+}
+.purchase .review .title span {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 30px;
+}
+.purchase .review .title span i {
+    color: #FFD028;
+    margin-right: 10px;
+}
+.purchase .review .view {
+    padding: 0 15px;
+    box-sizing: border-box;
+    height: 250px;
+    overflow: auto;
+}
+.purchase .review .view::-webkit-scrollbar {
+    width: 3px;
+}
+.purchase .review .view::-webkit-scrollbar-thumb {
+    background: #FFD028;
+    border-radius: 3px;
+}
+.purchase .review .view::-webkit-scrollbar-track {
+    background: white;
+}
+.purchase .review .view .con {
+    display: flex;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 20px;
+    padding: 0 0 5px 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.5);
+}
+.purchase .review .view .con .text {}
+.purchase .review .view .con .text p {
+    float: left;
+    line-height: 20px;
+    text-align: left;
+}
+.purchase .review .view .con .text .name {
+    line-height: 30px;
+}
+.purchase .review .view .con .date-star {
+    float: right;
+    text-align: right;
+}
+.purchase .review .view .con .date-star span {
+    line-height: 30px;
+}
+.purchase .review .view .con .date-star i {
+    font-size: 13px;
+    line-height: 1px;
+}
+
+
+/*---------------- DETAIL ----------------*/
+.detail {
+    width: 67.7083vw;
+    padding: 140px 58px 140px 125px;
+    box-sizing: border-box;
+}
+.detail img {
+    width: 100%;
+}
+/*---------------- RECOMMEND ----------------*/
+
+.recommend {
+    height: 700px;
+    padding: 0 110px 0 125px;
+    border-top: 1px solid rgba(34, 34, 34, 0.1);
+}
+.recommend > div  {
+    display: flex;
+    height: 200px;
+}
+.recommend .how_about {
+    margin: 90px 0;
+}
+.recommend .title {
+    width: 250px;
+    font-size: 25px;
+    font-weight: 800;
+    line-height: 35px;
+    color: #222222;
+}
+.recommend .items {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.recommend .items .wrap {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+.recommend .items .wrap:hover .desc,
+.recommend .items .wrap:hover .icon,
+.recommend .items .wrap .desc.on,
+.recommend .items .wrap .icon.on {
+    display: block;
+}
+.recommend .items .wrap img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.recommend .items .wrap .desc {
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 235, 51, 0.5);
+    z-index: 10;
+}
+.recommend .items .wrap .desc p {
+    font-size: 17px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: -0.5px;
+    margin-top: 25px;
+}
+.recommend .items .wrap:first-child .desc p {
+    margin-top: 40px;
+}
+.recommend .items .wrap .desc em {
+    font-size: 14px;
+}
+.recommend .items .wrap .desc span {
+    display: block;
+    width: 100px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 1.2;
+    margin: 12px auto;
+}
+.recommend .items .wrap .icon {
+    display: none;
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+}
+.recommend .items .wrap .icon li {
+    position: relative;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+    background-image: url("../main/rank_icon.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+    cursor: pointer;
+}
+.recommend .items .wrap .icon li:nth-child(1) {background-image: url("../main/icon_rank_heart.png");}
+.recommend .items .wrap .icon li:nth-child(1):before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 24px;
+    height: 24px;
+    transform: scale(0);
+    content: url("../main/icon_rank_heart_red.png");
+    opacity: 1;
+    transition: 0.5s;
+}
+.recommend .items .wrap .icon li:nth-child(1).active:before {
+    top: -20px;
+    transform: scale(0.5);
+    opacity: 0;
+}
+.recommend .items .wrap .icon li:nth-child(1).active {
+    background-image: url("../main/icon_rank_heart_red.png");
+}
+.recommend .items .wrap .icon li:nth-child(2) {
+    background-position: -24px 0;
+    margin: 0 7px 0 9px;
+}
+.recommend .items .wrap .icon li:nth-child(3) {background-position: -48px 0;}
+
+
+
+
+
+
+
+
+
+

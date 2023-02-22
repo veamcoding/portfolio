@@ -1,0 +1,487 @@
+body.stop {
+    overflow: hidden;
+}
+.cart-title {
+    padding: 95px 0 57px;
+}
+.cart-title .inner {
+    display: flex;
+    justify-content: space-between;
+}
+.cart-title h2 {
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 60px;
+}
+.cart-title .costSave {
+    display: flex
+}
+.cart-title .costSave p {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 18px;
+    text-align: right;
+    margin-right: 23px;
+}
+.cart-title .costSave p strong {
+    display: block;
+    font-size: 20px;
+    line-height: 24px;
+}
+.cart-title .costSave button {
+    position: relative;
+    display: inline-block;
+    width: 200px;
+    height: 48px;
+    border: none;
+    background: #222222;
+    border-radius: 25px;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.cart-title .costSave button span {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 900;
+    line-height: 20px;
+    color: #F5BF00;
+    width: 100%;
+    transition: 0.3s;
+}
+.cart-title .costSave button::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: "";
+    color: #222222;
+    width: 0;
+    height: 100%;
+    visibility: hidden;
+    background: #FFD028;
+    transition: 0.3s;
+}
+.cart-title .costSave button:hover::before {
+    width: 100%;
+    visibility: visible;
+}
+.cart-title .costSave button:hover span {
+    color: #222222;
+}
+/*---------------- CONTENTS ----------------*/
+.contents {}
+.contents .inner {
+    overflow: hidden;
+}
+/* Select-check */
+.contents .select-check {
+    float: left;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 954px;
+    padding: 0 5px 12px 10px;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.5);;
+}
+.contents .select-check ul {
+    display: flex;
+    font-size: 13px;
+    font-weight: 500;
+}
+.contents .select-check ul li:first-child,
+.contents .select-check ul li:last-child {
+    cursor: pointer;
+}
+/* CartList */
+.contents .cartList {
+    float: left;
+    width: 954px;
+    height: 530px;
+    padding: 0 0 0 8px;
+    box-sizing: border-box;
+    overflow: scroll;
+}
+.contents .cartList::-webkit-scrollbar {
+    width: 3px;
+}
+.contents .cartList::-webkit-scrollbar-thumb {
+    background: #FFEB33;
+    border-radius: 3px;
+}
+.contents .cartList::-webkit-scrollbar-track {
+    background: white;
+}
+/* input checkbox */
+.contents input[type=checkbox] {
+    display: none;
+}
+.contents input[type=checkbox] + label {
+    display: inline-block;
+    cursor: pointer;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 22px;
+    padding-left: 30px;
+    background: url('../cart/check_off.svg') left/22px no-repeat;
+}
+.contents input[type=checkbox]:checked + label {
+    background-image: url('../cart/check_on.svg');
+}
+/* list */
+.contents .cartList .list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 929px;
+    padding: 10px 10px 0 0;
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.2);;
+}
+.contents .cartList .list.off {
+    display: none;
+}
+.contents .cartList .list .item-img {
+    margin-left: 20px;
+}
+.contents .cartList .list .item-name {
+    width: 250px;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+}
+.contents .cartList .list .item-price {
+    width: 102px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+}
+.contents .cartList .list .item-price .price {
+    font-size: 16px;
+}
+.contents .cartList .list .quantity-box {
+    display: flex;
+    justify-content: space-between;
+    width: 90px;
+}
+.contents .cartList .list .quantity-box input {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    width: 24px;
+    height: 24px;
+    background: white;
+    border: none;
+    font-size: 14px;
+    color: rgba(34, 34, 34, 0.5);;
+    text-align: center;
+}
+.contents .cartList .list .quantity-box input[type=button] {
+    border: 1px solid rgba(34, 34, 34, 0.5);
+    border-radius: 50%;
+}
+.contents .cartList .list .quantity-box input[type=text] {
+    color: #222222;
+}
+.contents .cartList .list .itemAmount-price {
+    width: 107px;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 24px;
+    letter-spacing: -0.5px;
+}
+.contents .cartList .list .itemAmount-price .am-price {
+    width: 102px;
+    font-size: 16px;
+}
+.contents .cartList .list .trash-btn {
+    background: none;
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+/* Address & payment */
+.contents .address-payment {
+    float: right;
+    /*position: fixed;*/
+    /*right: 13.5417vw;*/
+    width: 360px;
+    height: 500px;
+}
+.contents .address-payment h3 {
+    line-height: 35px;
+}
+.contents .address-payment button {
+    width: 280px;
+    height: 40px;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 20px;
+    color: #222222;
+    border: 1px solid #222222;
+    border-radius: 20px;
+    background: none;
+}
+.contents .address-payment .address {
+    margin-bottom: 30px;
+}
+.contents .address-payment .address div {
+    padding: 20px 40px 30px;
+    box-sizing: border-box;
+    background: #EEEEEE;
+    border-radius: 20px;
+}
+.contents .address-payment .address p {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 18px;
+    margin-bottom: 20px;
+}
+.contents .address-payment .address p span {
+    display: block;
+    font-weight: 500;
+    line-height: 30px;
+}
+.contents .address-payment .address button {}
+.contents .address-payment .payment {
+}
+.contents .address-payment .payment div {
+    padding: 30px 40px;
+    box-sizing: border-box;
+    border: 2px solid #FFD028;
+    background: white;
+    border-radius: 20px;
+}
+.contents .address-payment .payment div ul {
+    padding: 0 10px 0 8px;
+    box-sizing: border-box;
+}
+.contents .address-payment .payment div ul li {
+    display: flex;
+    justify-content: space-between;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+}
+.contents .address-payment .payment div ul li:nth-child(3) {
+    padding-bottom: 9px;
+}
+.contents .address-payment .payment div ul li:nth-child(4) {
+    font-weight: 700;
+    font-size: 20px;
+    border-top: 1px solid rgba(34, 34, 34, 0.5);
+    padding-top: 7px;
+}
+.contents .address-payment .payment p {}
+.contents .address-payment .payment p strong {
+    font-size: 18px;
+    margin-right: 10px;
+}
+.contents .address-payment .payment button {
+    position: relative;
+    margin-top: 14px;
+    background: #FFD028;
+    border: none;
+    overflow: hidden;
+    transition: 0.3s;
+}
+.contents .address-payment .payment button span {
+    position: relative;
+    /*transition: 0.3s;*/
+}
+.contents .address-payment .payment button:hover {
+    background: #222222;
+}
+.contents .address-payment .payment button:hover span {
+    color: white;
+}
+
+/*---------------- RECOMMEND ----------------*/
+
+.recommend {}
+.recommend .inner {
+    float: left;
+    width: 954px;
+    height: 700px;
+    border-top: 1px solid rgba(34, 34, 34, 0.1);
+}
+.recommend > section > div  {
+    display: flex;
+    justify-content: space-between;
+    height: 150px;
+}
+.recommend .how_about {
+    margin: 90px 0;
+}
+.recommend .title {
+    width: 141px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 30px;
+    color: #222222;
+}
+.recommend .items {
+    display: flex;
+    width: 797px;
+    justify-content: space-between;
+}
+.recommend .items img {
+    width: 150px;
+    height: 150px;
+    border-radius: 20px;
+}
+
+/*---------------- PopUp ----------------*/
+.popUp {
+    position: fixed;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: 10;
+}
+.popUp form {
+    position: fixed;
+    top: 25vh;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 554px;
+    height: 571px;
+    background: white;
+    border: 1px solid black;
+    box-sizing: border-box;
+    display: none;
+}
+.popUp form.on {
+    display: block;
+}
+.popUp .close_btn {
+    position: relative;
+    float: right;
+    top: -30px;
+    right: -40px;
+    width: 32px;
+    height: 32px;
+    cursor: pointer;
+}
+.popUp .close_btn span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    width: 30px;
+    height: 1px;
+    background: #222222;
+}
+.popUp .close_btn span:first-child {
+    transform: translate(0, 50%) rotate(45deg);
+}
+.popUp .close_btn span:last-child {
+    transform: translate(0, 50%) rotate(-45deg);
+}
+/*changeAddress*/
+.popUp form.changeAddress {
+    padding: 65px 93px 89px 75px;
+}
+.popUp .changeAddress h2 {
+    font-size: 25px;
+    font-weight: 700;
+    line-height: 70px;
+    margin-left: 7px;
+}
+.popUp .changeAddress > div:not(.close_btn) {}
+.popUp .changeAddress > div:not(.close_btn) span {
+    display: inline-block;
+    width: 105px;
+    font-size: 15px;
+    font-weight: 600;
+    line-height: 30px;
+    padding-left: 23px;
+}
+.popUp .changeAddress > div input {
+    height: 30px;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.4);
+    box-sizing: border-box;
+    padding-left: 10px;
+    margin-top: 13px;
+}
+.popUp .changeAddress > div input::placeholder {
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(39, 39, 39, 0.5);
+}
+.popUp .changeAddress > div input:focus::placeholder {
+    visibility: hidden;
+}
+.popUp .changeAddress > div > em {
+    margin: 0 3px;
+    color: rgba(39, 39, 39, 0.5);
+}
+.popUp .changeAddress div select {
+    width: 70px;
+    height: 30px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid rgba(34, 34, 34, 0.4);
+    margin: 0;
+    padding: 0 0 0 10px;
+
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 30px;
+    color: rgba(39, 39, 39, 0.5);
+}
+.popUp .changeAddress div.name {
+    padding-top: 30px;
+    border-top: 1px solid #222222;
+}
+.popUp .changeAddress div.name input {
+    width: 160px;
+}
+.popUp .changeAddress div.mobile {}
+.popUp .changeAddress div.mobile input,
+.popUp .changeAddress div.call input,
+.popUp .changeAddress div.address input:nth-of-type(1) {
+    width: 70px;
+}
+.popUp .changeAddress div.call {}
+.popUp .changeAddress div.call span em {
+    font-size: 10px;
+}
+.popUp .changeAddress div.address {}
+.popUp .changeAddress div.address button {
+    width: 84px;
+    height: 27px;
+    border-radius: 5px;
+    margin-left: 10px;
+    font-size: 11px;
+    font-weight: 500;
+    line-height: 26px;
+    color: #FFFFFF;
+}
+.popUp .changeAddress div.address input:nth-of-type(2) {
+    width: 252px;
+    float: right;
+}
+.popUp .changeAddress > label {
+    float: right;
+    display: flex;
+    justify-content: right;
+    width: 100%;
+    font-size: 13px;
+    color: #222222;
+    margin: 10px 0 30px;
+    cursor: pointer;
+}
+.popUp .changeAddress label input {
+    margin-right: 5px;
+}
+.popUp .changeAddress > button {
+    width: 100%;
+    height: 40px;
+    border-radius: 5px;
+}
